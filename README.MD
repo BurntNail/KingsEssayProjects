@@ -5,7 +5,7 @@ Make the following project in each language:
  - Mini-grep
  - GUI Number guessing game
  
-Through each of the following languages via git sub-trees:
+Through each of the following languages via git sub-modules:
  - Kotlin
  - Haskell
  - Rust
