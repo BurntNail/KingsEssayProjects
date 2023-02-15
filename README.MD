@@ -4,13 +4,12 @@
 Make the following project in each language:
  - Mini-grep
  - GUI Number guessing game
- - Basic algorithms with profiling (eg. quicksort, bucketsort)
  
 Through each of the following languages via git sub-trees:
  - Kotlin
  - Haskell
  - Rust
- - C
+ - C++
  - C#
  - Zig
  - Javascript
