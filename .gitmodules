@@ -4,3 +4,6 @@
 [submodule "KE_CSharp"]
 	path = KE_CSharp
 	url = https://github.com/BurntNail/KE_CSharp
+[submodule "KE_Zig"]
+	path = KE_Zig
+	url = https://github.com/BurntNail/KE_Zig
