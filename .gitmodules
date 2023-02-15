@@ -1,3 +1,6 @@
 [submodule "KE_Rust"]
 	path = KE_Rust
 	url = https://github.com/BurntNail/KE_Rust/
+[submodule "KE_CSharp"]
+	path = KE_CSharp
+	url = https://github.com/BurntNail/KE_CSharp
