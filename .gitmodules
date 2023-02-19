@@ -13,3 +13,6 @@
 [submodule "KE_C"]
 	path = KE_C
 	url = https://github.com/BurntNail/KE_C
+[submodule "KE_Java"]
+	path = KE_Java
+	url = https://github.com/BurntNail/KE_Java
