@@ -7,3 +7,6 @@
 [submodule "KE_Zig"]
 	path = KE_Zig
 	url = https://github.com/BurntNail/KE_Zig
+[submodule "KE_CPP"]
+	path = KE_CPP
+	url = https://github.com/BurntNail/KE_CPP
