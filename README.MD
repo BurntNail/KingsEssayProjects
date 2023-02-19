@@ -4,6 +4,7 @@
 Make the following project in each language:
  - Mini-grep
  - GUI Number guessing game
+ - Console ASCII Mandlebrot
  
 Through each of the following languages via git sub-modules:
  - Kotlin
