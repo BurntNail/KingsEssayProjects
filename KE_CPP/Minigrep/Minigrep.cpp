@@ -7,10 +7,10 @@
 int main(int argc, char* argv[]) {
 	switch (argc) {
 	case 1:
-		fprintf(stderr, "You need to pass in a file as the first argument.");
+		fprintf(stderr, "You need to pass in a file as the first argument.\n");
 		return -1;
 	case 2:
-		fprintf(stderr, "You need to pass in a pattern to look for as the second argument.");
+		fprintf(stderr, "You need to pass in a pattern to look for as the second argument.\n");
 		return -1;
 	}
 

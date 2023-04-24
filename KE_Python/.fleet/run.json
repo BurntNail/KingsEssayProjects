@@ -6,8 +6,7 @@
             "environment": {
                 "PYTHONUNBUFFERED": "1",
             },
-            "file": "E:\\Programming\\Work\\KE\\KE_Python\\Minigrep\\minigrep.py",
-            "workingDir": "E:\\Programming\\Work\\KE\\KE_Python",
+            "file": "C:\\Users\\Jack Maguire\\Documents\\Code\\Kings Essay\\KE_Python\\Minigrep\\minigrep.py",
             "arguments": ["jabberwocky.txt", "vorpal"],
         },
         {
@@ -16,7 +15,7 @@
             "environment": {
                 "PYTHONUNBUFFERED": "1",
             },
-            "file": "E:\\Programming\\Work\\KE\\KE_Python\\Mandlebrot\\mandlebrot.py",
+            "file": "C:\\Users\\Jack Maguire\\Documents\\Code\\Kings Essay\\KE_Python\\Mandlebrot\\mandlebrot.py",
             "arguments": [],
         },
         {

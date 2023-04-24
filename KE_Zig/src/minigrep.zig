@@ -45,6 +45,6 @@ pub fn main() !void {
     //     std.debug.print("Found Line: {s}\n", .{line[..]});
     // }
 
-    var local_ebv = ebv.ExpandableBitVec.new();
-    std.debug.print("Var: {d}\n", .{local_ebv.abc()});
+    //var local_ebv = ebv.ebv();
+    //std.debug.print("Var: {s}\n", .{local_ebv.abc()});
 }

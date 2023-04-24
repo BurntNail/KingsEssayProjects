@@ -1,6 +1,4 @@
 # KE_Rust
 King's Essay Rust Project.
 
- - Run the minigrep using `cargo run --bin minigrep`
- - Run the mandlebrot using `cargo run --bin minigrep`
- - Run the guessing game with `cargo run` or `trunk serve`
+All projects can be ran from inside their directories in the cargo workspace, and the guessing game runs a GUI with `cargo run` or a web app with `trunk serve`.

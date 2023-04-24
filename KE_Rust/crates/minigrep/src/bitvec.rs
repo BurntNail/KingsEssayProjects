@@ -31,22 +31,18 @@ impl ExpandableBitVec {
         el & (1 << backing_ind) > 0
     }
 
-    pub fn set(&mut self, index: usize) {
+    pub fn set(&mut self, index: usize, value: bool) {
         self.extend_to_size(index + 1);
 
         let vec_ind = index / BITS;
         let backing_ind = index % BITS;
 
-        self.backing[vec_ind] |= 1 << backing_ind;
-    }
+        if value {
+            self.backing[vec_ind] |= 1 << backing_ind;
+        } else {
+            self.backing[vec_ind] &= BackingType::MAX - (1 << backing_ind);
+        }
 
-    pub fn unset(&mut self, index: usize) {
-        self.extend_to_size(index + 1);
-
-        let vec_ind = index / BITS;
-        let backing_ind = index % BITS;
-
-        self.backing[vec_ind] &= BackingType::MAX - (1 << backing_ind);
     }
 
     pub fn clear(&mut self) {
@@ -70,7 +66,7 @@ mod tests {
 
         for i in (0..30).filter(|i| i % 3 == 0) {
             eprintln!("Set %3 {i}");
-            bv.set(i);
+            bv.set(i, true);
         }
         for i in 0..30 {
             eprintln!("Check %3 {i}");
@@ -83,7 +79,7 @@ mod tests {
 
         for i in (0..30).filter(|i| i % 6 == 0) {
             eprintln!("Unset %6 {i}");
-            bv.unset(i);
+            bv.set(i, false);
         }
         for i in 0..30 {
             eprintln!("Check %6 {i}");

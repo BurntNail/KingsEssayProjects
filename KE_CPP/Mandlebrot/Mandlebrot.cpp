@@ -72,7 +72,6 @@ int main()
         }
     }
 
-    int a = 5;
     printf("%s", s.c_str());
 
 }

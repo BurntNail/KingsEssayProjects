@@ -3,8 +3,8 @@ const std = @import("std");
 const ASCII = " .:;+=xX$&";
 const ASCII_LEN_MINUX_ONE: usize = 9;
 
-const WIDTH: usize = 50;
-const HEIGHT: usize = 35;
+const WIDTH: usize = 100;
+const HEIGHT: usize = 70;
 
 const WIDTH_X_HEIGHT: usize = WIDTH * HEIGHT;
 
@@ -13,14 +13,14 @@ const RE_END: f32 = 1.0;
 const IM_START: f32 = -1.0;
 const IM_END: f32 = 1.0;
 
-const MAX_ITERS: u8 = 50;
+const MAX_ITERS: u8 = 100;
 
 pub fn main() !void {
     // var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     // defer _ = gpa.deinit();
     // const allocator = gpa.allocator();
 
-    var iters = [_]u8{0} ** (WIDTH_X_HEIGHT);
+    var iters = [_]u16{0} ** (WIDTH_X_HEIGHT);
 
     // var x: f32 = 0.0;
     // var y: f32 = 0.0;
@@ -31,14 +31,14 @@ pub fn main() !void {
     //     }
     // } TODO: check speed of this vs below
 
-    for ([_]u8{0} ** HEIGHT) |_, y| {
-        for ([_]u8{0} ** WIDTH) |_, x| {
+    for ([_]u8{0} ** HEIGHT, 0..) |_, y| {
+        for ([_]u8{0} ** WIDTH, 0..) |_, x| {
             const real = (@intToFloat(f32, x) / @as(f32, WIDTH)) * (RE_END - RE_START) + RE_START;
             const imaginary = (@intToFloat(f32, y) / @as(f32, HEIGHT)) * (IM_END - IM_START) + IM_START;
 
             var re: f32 = 0.0;
             var im: f32 = 0.0;
-            var iter: u8 = 0.0;
+            var iter: u16 = 0.0;
 
             while (re * re + im * im < 4.0 and iter < MAX_ITERS) {
                 re = re * re - im * im + real;
@@ -50,8 +50,8 @@ pub fn main() !void {
         }
     }
 
-    var max: u8 = 0;
-    var min: u8 = MAX_ITERS;
+    var max: u16 = 0;
+    var min: u16 = MAX_ITERS;
 
     for (iters) |iter| {
         if (iter < MAX_ITERS and iter > max) {

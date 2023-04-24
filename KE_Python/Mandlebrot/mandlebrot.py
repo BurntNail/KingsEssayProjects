@@ -3,15 +3,15 @@ from math import floor
 ASCII = " .:;+=xX$&"
 ASCII_LEN_MINUS_ONE = len(ASCII) - 1
 
-WIDTH = 50
-HEIGHT = 35
+WIDTH = 100
+HEIGHT = 70
 
 RE_START = -2
 RE_END = 1
 IM_START = -1
 IM_END = 1
 
-MAX_ITERS = 25
+MAX_ITERS = 100
 
 if __name__ == "__main__":
     iters = []

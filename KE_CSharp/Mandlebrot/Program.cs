@@ -4,15 +4,15 @@
     {
         private const String ASCII = " .:;+=xX$&";
 
-        private const int WIDTH = 50;
-        private const int HEIGHT = 35;
+        private const int WIDTH = 100;
+        private const int HEIGHT = 70;
 
         private const float RE_START = -2.0f;
         private const float RE_END = 1.0f;
         private const float IM_START = -1.0f;
         private const float IM_END = 1.0f;
 
-        private const int MAX_ITERS = 25;
+        private const int MAX_ITERS = 100;
         
         static void Main(String[] args)
         {

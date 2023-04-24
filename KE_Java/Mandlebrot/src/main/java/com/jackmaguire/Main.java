@@ -10,15 +10,15 @@ public class Main {
         final char[] ASCII = " .:;+=xX$&".toCharArray();
         final int asciiLenMinusOne = ASCII.length - 1;
 
-        final int WIDTH = 50;
-        final int HEIGHT = 35;
+        final int WIDTH = 100;
+        final int HEIGHT = 70;
 
         final float RE_START = -2.0f;
         final float RE_END = 1.0f;
         final float IM_START = -1.0f;
         final float IM_END = 1.0f;
 
-        final int MAX_ITERS = 25;
+        final int MAX_ITERS = 100;
 
         List<Integer> iters = new ArrayList<>();
         for (int y = 0; y < HEIGHT; y++)

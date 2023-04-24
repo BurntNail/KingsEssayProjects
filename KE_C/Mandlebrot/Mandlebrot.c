@@ -4,15 +4,15 @@
 const char *ASCII = " .:;+=xX$&";
 const int ASCII_LEN_MINUS_ONE = 9;
 
-const int WIDTH = 500;
-const int HEIGHT = 350;
+const int WIDTH = 100;
+const int HEIGHT = 70;
 
 const float RE_START = -2.0;
 const float RE_END = 1.0;
 const float IM_START = -1.0;
 const float IM_END = 1.0;
 
-const int MAX_ITERS = 500;
+const int MAX_ITERS = 100;
 
 int main()
 {
