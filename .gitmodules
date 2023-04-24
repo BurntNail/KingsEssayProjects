@@ -1,0 +1,3 @@
+[submodule "precipice"]
+	path = precipice
+	url = https://github.com/BurntNail/precipice
