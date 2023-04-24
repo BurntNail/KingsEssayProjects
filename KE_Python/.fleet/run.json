@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "minigrep",
+            "type": "python",
+            "environment": {
+                "PYTHONUNBUFFERED": "1",
+            },
+            "file": "E:\\Programming\\Work\\KE\\KE_Python\\Minigrep\\minigrep.py",
+            "workingDir": "E:\\Programming\\Work\\KE\\KE_Python",
+            "arguments": ["jabberwocky.txt", "vorpal"],
+        },
+        {
+            "name": "mandlebrot",
+            "type": "python",
+            "environment": {
+                "PYTHONUNBUFFERED": "1",
+            },
+            "file": "E:\\Programming\\Work\\KE\\KE_Python\\Mandlebrot\\mandlebrot.py",
+            "arguments": [],
+        },
+        {
+            "name": "guessing_game",
+            "type": "python",
+            "environment": {
+                "PYTHONUNBUFFERED": "1",
+            },
+            "file": "E:\\Programming\\Work\\KE\\KE_Python\\GuessingGame\\guessing_game.py",
+            "arguments": [],
+        },
+    ]
+}

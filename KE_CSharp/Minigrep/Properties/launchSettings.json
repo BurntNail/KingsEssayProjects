@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Minigrep": {
+      "commandName": "Project",
+      "commandLineArgs": "jabberwocky.txt \"vorpal\"",
+      "workingDirectory": "E:\\Programming\\Work\\KE\\KE_CSharp\\Minigrep"
+    }
+  }
+}
