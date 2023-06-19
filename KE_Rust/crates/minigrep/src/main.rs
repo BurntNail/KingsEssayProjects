@@ -12,7 +12,7 @@ use regex::Regex;
 
 fn main () {
     if let Err(e) = main_inner() {
-        eprintln!("Failed: {e:?}");
+        eprintln!("\nFailed: {e:?}");
     }
 }
 
@@ -24,6 +24,9 @@ fn main_inner() -> Result<(), Box<dyn std::error::Error>> {
 
     let mut bv = ExpandableBitVec::new(256);
     for line in contents.lines() {
+        let size = line.len();
+        bv.extend_to_size(size);
+
         for m in re.find_iter(line) {
             for index in m.range() {
                 bv.set(index, true);
